@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label x:Name="IdTextBoxLabel" Content="Id" HorizontalAlignment="Left" Margin="52,82,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="NombreLabel" Content="Nombres" HorizontalAlignment="Left" Margin="52,145,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" Margin="183,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NombresTextBox" HorizontalAlignment="Left" Margin="215,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
