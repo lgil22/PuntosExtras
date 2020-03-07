@@ -12,7 +12,7 @@
         <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" Margin="123,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="NombresTextBox" HorizontalAlignment="Left" Margin="123,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="81,217,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="221,227,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="221,227,0,0" VerticalAlignment="Top" Click="GuardarButton_Click"/>
         <Button x:Name="EliminarButton" Content="Eliminar" HorizontalAlignment="Left" Margin="363,237,0,0" VerticalAlignment="Top"/>
         <Button x:Name="BuscarButton" Content="Buscar" HorizontalAlignment="Left" Margin="319,95,0,0" VerticalAlignment="Top"/>
 
