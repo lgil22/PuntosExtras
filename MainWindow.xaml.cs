@@ -102,5 +102,40 @@ namespace RegistroPersona
         {
             Limpiar();
         }
+
+        private void EliminarButton_Click(object sender, RoutedEventArgs e)
+        {
+            int id;
+            int.TryParse(IdTextBox.Text, out id);
+
+            Limpiar();
+
+            if (PersonaBLL.Eliminar(id))
+                MessageBox.Show("Eliminado", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
+            else
+                MessageBox.Show(IdTextBox.Text, "No se puede eliminar una persona que no existe");
+        }
+
+        private void BuscarButton_Click(object sender, RoutedEventArgs e)
+        {
+            int id;
+            Persona persona = new Persona();
+            int.TryParse(IdTextBox.Text, out id);
+
+            Limpiar();
+
+            persona = PersonaBLL.Buscar(id);
+
+            if (persona != null)
+            {
+                MessageBox.Show("Persona Encontrada");
+                LlenaCampo(persona);
+            }
+
+            else
+            {
+                MessageBox.Show("Persona no Encontrada");
+            }
+        }
     }
 }
