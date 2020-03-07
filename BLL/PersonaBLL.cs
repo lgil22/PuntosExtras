@@ -44,9 +44,6 @@ namespace RegistroPersona.BLL
 
             try
             {
-                //buscar las entidades que no estan para removerlas
-                var Anterior = db.Persona.Find(persona.PersonaId);
-               
 
                 db.Entry(persona).State = EntityState.Modified;
                 paso = (db.SaveChanges() > 0);

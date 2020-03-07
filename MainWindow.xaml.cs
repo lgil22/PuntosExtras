@@ -7,19 +7,30 @@ using System.Threading.Tasks;
 using System.Windows;
 using RegistroPersona.BLL;
 
+
 namespace RegistroPersona
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+  
+
     public partial class MainWindow : Window
     {
+       Persona persona = new Persona();
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = persona;
+
         }
 
-
+        private void Recargar()
+        {
+            this.DataContext = null;
+            this.DataContext = persona;
+        }
         private void Limpiar()
         {
             IdTextBox.Text = "0";
@@ -107,11 +118,12 @@ namespace RegistroPersona
         {
             int id;
             int.TryParse(IdTextBox.Text, out id);
-
+         
             Limpiar();
 
             if (PersonaBLL.Eliminar(id))
                 MessageBox.Show("Eliminado", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
+            
             else
                 MessageBox.Show(IdTextBox.Text, "No se puede eliminar una persona que no existe");
         }
@@ -130,6 +142,7 @@ namespace RegistroPersona
             {
                 MessageBox.Show("Persona Encontrada");
                 LlenaCampo(persona);
+                Recargar();
             }
 
             else
