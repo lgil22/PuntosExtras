@@ -56,7 +56,7 @@ namespace RegistroPersona
             personas = LlenaClase();
 
             //Determinar si es guardar o modificar
-            //if (idTextBox.Text.ToInt() == 0)
+            if (IdTextBox.Text.ToInt() == 0)
 
             if (string.IsNullOrWhiteSpace(IdTextBox.Text) || IdTextBox.Text == "0")
                 paso = PersonaBLL.Guardar(personas);
@@ -98,5 +98,9 @@ namespace RegistroPersona
             return paso;
         }
 
+        private void NuevoButton_Click(object sender, RoutedEventArgs e)
+        {
+            Limpiar();
+        }
     }
 }
