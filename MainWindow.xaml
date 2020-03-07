@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RegistroPersona"
         mc:Ignorable="d"
-        Title="MainWindow" Height="285" Width="385" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Registro Persona" Height="285" Width="385" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="48*"/>
@@ -15,10 +15,10 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="IdTextBoxLabel" Content="Id" HorizontalAlignment="Left" Margin="52,42,0,0" VerticalAlignment="Top" Height="26" Width="20" Grid.RowSpan="2"/>
-        <Label x:Name="NombreLabel" Content="Nombres" HorizontalAlignment="Left" Margin="52,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.294,-0.474" Height="26" Width="59" Grid.Row="1"/>
-        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" Margin="123,2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" Grid.Row="1"/>
-        <TextBox x:Name="NombresTextBox" HorizontalAlignment="Left" Margin="123,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" Grid.Row="1"/>
+        <Label x:Name="IdTextBoxLabel" Content="Id" HorizontalAlignment="Left" Margin="35,42,0,0" VerticalAlignment="Top" Height="26" Width="20" Grid.RowSpan="2" RenderTransformOrigin="-0.533,0.437"/>
+        <Label x:Name="NombreLabel" Content="Nombres" HorizontalAlignment="Left" Margin="35,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.294,-0.474" Height="26" Width="59" Grid.Row="1"/>
+        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" Margin="105,1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" Grid.Row="1"/>
+        <TextBox x:Name="NombresTextBox" HorizontalAlignment="Left" Margin="105,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18" Grid.Row="1"/>
         <Button x:Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" Margin="62,152,0,0" VerticalAlignment="Top" Click="NuevoButton_Click" RenderTransformOrigin="-0.06,-0.516" Width="49" Height="20" Grid.Row="1"/>
         <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" Margin="178,157,0,0" VerticalAlignment="Top" Click="GuardarButton_Click" RenderTransformOrigin="-0.564,-0.683" Height="20" Width="47" Grid.Row="1"/>
         <Button x:Name="EliminarButton" Content="Eliminar" HorizontalAlignment="Left" Margin="292,152,0,0" VerticalAlignment="Top" Click="EliminarButton_Click" Height="20" Width="46" Grid.Row="1"/>
